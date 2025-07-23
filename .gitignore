@@ -1,0 +1,105 @@
+# ========================
+# Python: 캐시 및 컴파일 파일
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ========================
+# Python: 가상환경
+# ========================
+venv/
+ENV/
+env/
+.venv/
+.Python
+uv.lock
+# ========================
+# Python: 패키징 및 배포
+# ========================
+build/
+dist/
+downloads/
+develop-eggs/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ========================
+# 테스트 및 커버리지 도구
+# ========================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.pyre/
+
+# ========================
+# Jupyter Notebook
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# 딥러닝 모델 및 바이너리 대용량 파일
+# ========================
+*.pt
+*.pth
+*.ckpt
+*.t7
+*.h5
+*.pb
+*.onnx
+*.npy
+*.npz
+*.joblib
+*.pkl
+
+# ========================
+# 압축 파일 및 백업
+# ========================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.xz
+*.7z
+*.rar
+
+# ========================
+# 에디터 및 IDE 설정
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# 시스템 파일
+# ========================
+.DS_Store       # macOS
+Thumbs.db       # Windows
+ehthumbs.db     # Windows
+Desktop.ini     # Windows
+*~              # 임시 파일 (Linux)
+*.log           # 로그 파일
+
+# ========================
+# 기타 사용자 정의
+# ========================
+# 여기에 무시하고 싶은 사용자 파일/폴더 추가 가능
