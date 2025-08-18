@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+      "anygrasp_server": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/user/문서/neuromeka_ojh/new code/code/workspace/mcp_servers/anygrasp_server",
+        "run",
+        "anygrasp_mcp_server.py"
+      ]
+    },
+    "detector": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/user/문서/neuromeka_ojh/new code/code/workspace/mcp_servers/detect_server",
+        "run",
+        "detect_object_mcp_server.py"
+      ]
+    },
+    "indy": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/user/문서/neuromeka_ojh/new code/code/workspace/mcp_servers/indy_server",
+        "run",
+        "indy_mcp_server.py"
+      ]
+    }
+
+  }
+}
