@@ -20,10 +20,11 @@
 3. requirements 에 명시된 pip들 설치
 4. cuda 12.1 버전 설치
 5. 아래 명령어 입력 후 설치
+   
    uv pip install torch==2.5.1+cu121torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
 
-6. https://github.com/IDEA-Research/Grounded-SAM-2 들어가 clone 후 사이트의 안내에 따라 설치
-7. https://github.com/ChaoningZhang/MobileSAM 들어가 clone 혹은 사이트 안내에 따라 설치 후 ppt에 나온대로 pt파일 배치
+7. https://github.com/IDEA-Research/Grounded-SAM-2 들어가 clone 후 사이트의 안내에 따라 설치
+8. https://github.com/ChaoningZhang/MobileSAM 들어가 clone 혹은 사이트 안내에 따라 설치 후 ppt에 나온대로 pt파일 배치
 
 ### 2. Anygrasp server 설치법
 1. anygrasp_server 폴더로 이동
