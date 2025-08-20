@@ -4,7 +4,7 @@
 ## environment used in project
 OS : Ubuntu 22.04.5LTS\
 Python : 3.10.12\
-Camera : Intel D435i
+Camera : Intel D435i\
 cuda : 12.1
 
 ## main파일 설치법
