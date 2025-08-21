@@ -43,26 +43,26 @@ uv pip install torch==2.5.1+cu121torchvision==0.20.1+cu121 torchaudio==2.5.1+cu1
 7. After install Minkowski Engine, Find the following files and Add headers.
 ```
 1) **.../MinkowskiEngine/src/convolution_kernel.cuh**  
-   Add header:\
+   Add header:
    #include <thrust/execution_policy.h>
 
 2) **.../MinkowskiEngine/src/coordinate_map_gpu.cu**  
-   Add headers:\
-   #include <thrust/unique.h> \
+   Add headers:
+   #include <thrust/unique.h> 
    #include <thrust/remove.h>
 
 3) **.../MinkowskiEngine/src/spmm.cu**  
-   Add headers:\
-   #include <thrust/execution_policy.h> \
-   #include <thrust/reduce.h> \
+   Add headers:
+   #include <thrust/execution_policy.h> 
+   #include <thrust/reduce.h> 
    #include <thrust/sort.h>
 ```
 8. After change, put export MAX_JOBS=2 in terminal (Minkowski 빌드할때 컴퓨터 과부화로 멈추는거 방지)
 9. Run this in terminal to build MinkowskiEngine
 ```
-cd MinkowskiEngine \
-uv pip install --upgrade setuptools==59.8.0 \
-uv pip install ninja \
+cd MinkowskiEngine 
+uv pip install --upgrade setuptools==59.8.0 
+uv pip install ninja 
 python setup.py install --blas_include_dirs=${CONDA_PREFIX}/include --blas=openblas
 ```
 10. https://github.com/graspnet/anygrasp_sdk 사이트를 들어가 먼저 license 등록 후 사이트의 안내대로 설치
