@@ -64,6 +64,9 @@ uv pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu
 8. After change, put export MAX_JOBS=2 in terminal (Minkowski 빌드할때 컴퓨터 과부화로 멈추는거 방지)
 9. Run this in terminal to build MinkowskiEngine
 ```
+sudo apt update
+sudo apt install -y libopenblas-dev # to prevent error on building (Minkowski need this)
+
 cd MinkowskiEngine 
 uv pip install --upgrade setuptools==59.8.0 
 uv pip install ninja 
