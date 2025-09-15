@@ -73,12 +73,11 @@ uv pip install ninja
 python setup.py install --blas_include_dirs=${CONDA_PREFIX}/include --blas=openblas
 ```
 10. https://github.com/graspnet/anygrasp_sdk 사이트를 들어가 사이트 안내대로 anygrasp 설치 (minkowski 제외)
-11. graspnetapi pip로 설치하면 'sklearn' 구버전으로 입력됬다는 오류가 뜸, 이를 해결하기 위해서 아래와 같이 직접 수정
+11. graspnetapi pip로 설치하면 'sklearn' 구버전으로 입력됬다는 오류가 뜸, 이를 해결하기 위해서 아래와 같이 직접 다운 후 setup.py에서 sklearn을 scikit-learn으로 변경
 ```
 git clone https://github.com/graspnet/graspnetAPI.git
 cd graspnetAPI
 ```
-그리고 setup.py에서 sklearn을 scikit-learn으로 변경
 
 12. 사이트에서 license form 등록 
 13. license는 답장이 오기까지 3~7일 소요됨 만약 답장이 오면 license 폴더에 전부 넣기
