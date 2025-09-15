@@ -72,13 +72,19 @@ uv pip install --upgrade setuptools==59.8.0
 uv pip install ninja 
 python setup.py install --blas_include_dirs=${CONDA_PREFIX}/include --blas=openblas
 ```
-10. https://github.com/graspnet/anygrasp_sdk 사이트를 들어가 사이트 안내대로 anygrasp 설치 (minkowski 제외) 
-11. 사이트에서 license form 등록 
-12. license는 답장이 오기까지 3~7일 소요됨 만약 답장이 오면 license 폴더에 전부 넣기
-13. anygrasp sdk/grasp detection/gsnet_versions에 들어가 gsnet.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
-14. anygrasp sdk/license_registration/lib_cxx_versions를 들어가 lib_cxx.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
+10. https://github.com/graspnet/anygrasp_sdk 사이트를 들어가 사이트 안내대로 anygrasp 설치 (minkowski 제외)
+11. graspnetapi pip로 설치하면 'sklearn' 구버전으로 입력됬다는 오류가 뜸, 이를 해결하기 위해서 아래와 같이 직접 수정
+```
+git clone https://github.com/graspnet/graspnetAPI.git
+cd graspnetAPI
+```
+그리고 setup.py에서 sklearn을 scikit-learn으로 변경
+13. 사이트에서 license form 등록 
+14. license는 답장이 오기까지 3~7일 소요됨 만약 답장이 오면 license 폴더에 전부 넣기
+15. anygrasp sdk/grasp detection/gsnet_versions에 들어가 gsnet.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
+16. anygrasp sdk/license_registration/lib_cxx_versions를 들어가 lib_cxx.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
 
-15. 만약 ImportError: libcrypto.so.1.1: cannot open shared object file: No such file or directory가 뜨면 아래를 터미널에 입력
+17. 만약 ImportError: libcrypto.so.1.1: cannot open shared object file: No such file or directory가 뜨면 아래를 터미널에 입력
 ```
 wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
