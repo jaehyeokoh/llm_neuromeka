@@ -35,7 +35,7 @@ uv pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu
 5. 아래 명령어 입력 후 설치
 
 ```
-uv pip install torch==2.5.1+cu121torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
+uv pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
 ```
 6. Install the MinkowskiEngine.
    git clone https://github.com/NVIDIA/MinkowskiEngine.git
