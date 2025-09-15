@@ -56,6 +56,9 @@ uv pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu
    #include <thrust/execution_policy.h> 
    #include <thrust/reduce.h> 
    #include <thrust/sort.h>
+4) **.../MinkowskiEngine/src/3rdparty/concurrent_unordered_map.cuh**  
+   Add headers:
+   #include <thrust/execution_policy.h>
 ```
 8. After change, put export MAX_JOBS=2 in terminal (Minkowski 빌드할때 컴퓨터 과부화로 멈추는거 방지)
 9. Run this in terminal to build MinkowskiEngine
