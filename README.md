@@ -72,11 +72,10 @@ uv pip install --upgrade setuptools==59.8.0
 uv pip install ninja 
 python setup.py install --blas_include_dirs=${CONDA_PREFIX}/include --blas=openblas
 ```
-10. https://github.com/graspnet/anygrasp_sdk 사이트를 들어가 먼저 license 등록 후 사이트의 안내대로 설치
-
-11. license는 답장이 오기까지 3~7일 소요됨 만약 답장이 오면 license 폴더에 전부 넣기
-
-12. anygrasp sdk/grasp detection/gsnet_versions에 들어가 gsnet.cpython-310-x86_64-linux-gnu.so, lib_cxx.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
+10. https://github.com/graspnet/anygrasp_sdk 사이트를 들어가 사이트 안내대로 anygrasp 설치 (minkowski 제외) 
+11. 사이트에서 license form 등록 
+12. license는 답장이 오기까지 3~7일 소요됨 만약 답장이 오면 license 폴더에 전부 넣기
+13. anygrasp sdk/grasp detection/gsnet_versions에 들어가 gsnet.cpython-310-x86_64-linux-gnu.so, lib_cxx.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
 
 ### 3. Indy server 설치법
 1. indy_server 폴더로 이동
