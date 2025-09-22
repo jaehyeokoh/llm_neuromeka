@@ -84,7 +84,8 @@ cd graspnetAPI
 14. anygrasp sdk/grasp detection/gsnet_versions에 들어가 gsnet.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
 15. anygrasp sdk/license_registration/lib_cxx_versions를 들어가 lib_cxx.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
 
-16. 만약 ImportError: libcrypto.so.1.1: cannot open shared object file: No such file or directory가 뜨면 아래를 터미널에 입력
+16. checkpoint(lincense 관련 메일에서 받음).tar 파일들은 가장 상위 폴더에 checkpoint라는 폴더 만들어 거기에 넣기 
+17. 만약 ImportError: libcrypto.so.1.1: cannot open shared object file: No such file or directory가 뜨면 아래를 터미널에 입력
 ```
 wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
