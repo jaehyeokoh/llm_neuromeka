@@ -84,8 +84,8 @@ cd graspnetAPI
 
 12. 사이트에서 license form 등록 
 13. license는 답장이 오기까지 3~7일 소요됨 만약 답장이 오면 license 폴더에 전부 넣기
-14. anygrasp sdk/grasp detection/gsnet_versions에 들어가 gsnet.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
-15. anygrasp sdk/license_registration/lib_cxx_versions를 들어가 lib_cxx.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기
+14. anygrasp sdk/grasp detection/gsnet_versions에 들어가 gsnet.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기 (실행 코드와 같은 위치에 있어야 함)  
+15. anygrasp sdk/license_registration/lib_cxx_versions를 들어가 lib_cxx.cpython-310-x86_64-linux-gnu.so를 복사해 가장 상위 폴더(anygrasp_server)에 붙혀넣기 (실행 코드와 같은 위치에 있어야 함)  
 
 16. checkpoint(lincense 관련 메일에서 받음).tar 파일들은 가장 상위 폴더에 checkpoint라는 폴더 만들어 거기에 넣기 
 17. 만약 ImportError: libcrypto.so.1.1: cannot open shared object file: No such file or directory가 뜨면 아래를 터미널에 입력
