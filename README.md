@@ -92,6 +92,11 @@ cd graspnetAPI
 ```
 wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
 sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+```  
+18. 만약 sh: 1: ifconfig: not found, xargs: ifconfig: No such file or directory, Segmentation fault (core dumped)오류가 뜨면 우분투가 ifconfig가 안된다는 것이므로 아래 명령어 실행
+```
+sudo apt update
+sudo apt install net-tools
 ```
 ### 3. Indy server 설치법
 1. indy_server 폴더로 이동
