@@ -38,7 +38,7 @@ uv pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu
 ```
 ```
 sudo apt update
-sudo apt install python3.10-dev
+sudo apt install python3.10-dev # 이거 해줘야 minkowski 빌드 시 헤더파일 파악 가능
 ```
 6. Install the MinkowskiEngine.
    git clone https://github.com/NVIDIA/MinkowskiEngine.git
