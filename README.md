@@ -33,9 +33,12 @@ uv pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu
 3. requirements 에 명시된 pip들 설치 (설치중 실패하는 경우가 있을수도 있음 e.g numpy, cv2 그럴 경우 발생 시 해당 모듈은 일단 설치에서 제외 - 어짜피 나중에 Anygrasp 설치할 때 깔림)
 4. cuda 12.1 버전 설치 (만약 안했으면)
 5. 아래 명령어 입력 후 설치
-
 ```
 uv pip install torch==2.5.1+cu121 torchvision==0.20.1+cu121 torchaudio==2.5.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
+```
+```
+sudo apt update
+sudo apt install python3.10-dev
 ```
 6. Install the MinkowskiEngine.
    git clone https://github.com/NVIDIA/MinkowskiEngine.git
