@@ -104,5 +104,19 @@ sudo apt install net-tools
 3. requirements에 있는게 자동으로 설치될 것이고 파이썬 버전 3.10.12의 venv가 활성화 됨을 확인
 
 
+### Cuda 12.2 이상의 device에서 Minkowski ending 설치법 (수정)
+출처 : https://github.com/CiSong10/MinkowskiEngine.git
+1. 아래 명령어로 minkowski engine 다운
+```
+git clone https://github.com/CiSong10/MinkowskiEngine.git
+cd MinkowskiEngine
+git checkout cuda12-installation
+```
+2. 설치
+```
+MAX_JOBS=4 python setup.py install --force_cuda --blas=openblas --blas_include_dirs=${CONDA_PREFIX}/include
+```
+
+
 
 
