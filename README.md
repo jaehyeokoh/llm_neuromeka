@@ -116,7 +116,10 @@ git checkout cuda12-installation
 ```
 MAX_JOBS=4 python setup.py install --force_cuda --blas=openblas --blas_include_dirs=${CONDA_PREFIX}/include
 ```
-
+3. 만약 GCC 11 컴파일러의 기본 C++ 라이브러리(std::__to_address)와, CUDA 12가 자체적으로 제공하는 라이브러리(cuda::std::__to_address) 간에 이름 충돌(Namespace Collision)이 발생 시 아래 명령어 실행
+```
+sudo sed -i 's/\bauto __raw = __to_address(__r.get());/auto __raw = std::__to_address(__r.get());/' /usr/include/c++/11/bits/shared_ptr_base.h
+```
 
 
 
